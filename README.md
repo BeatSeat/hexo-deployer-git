@@ -1,10 +1,12 @@
-# hexo-deployer-git
+# hexo-deployer-git-submodule
 
 [![CI](https://github.com/hexojs/hexo-deployer-git/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/hexojs/hexo-deployer-git/actions/workflows/ci.yml)
 [![NPM version](https://badge.fury.io/js/hexo-deployer-git.svg)](https://www.npmjs.com/package/hexo-deployer-git)
 [![Coverage Status](https://coveralls.io/repos/github/hexojs/hexo-deployer-git/badge.svg)](https://coveralls.io/github/hexojs/hexo-deployer-git)
 
 Git deployer plugin for [Hexo].
+
+**MODIFIED**: 因为我另外会使用submodule来管理图床等静态文件（暂时使用unpkg做cdn），所以这里准备加一个将项目文件夹下assets的submodule按照相应格式进行commit-push更新，然后再相应更新gh-pages的功能，思路上来讲就是简单加多了一个更新，实际上后续还可以扩展更多的功能。
 
 ## Notice: Fatal HttpRequestException Error on pushing to GitHub?
 
